@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">15011020_NotDefteri</string>
+    <string name="Search_Hint">Zaman Yada Lokasyon Giriniz</string>
+    <string name="title_activity_delete_files">DeleteFiles</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500000dp"
+    android:layout_height="400dp"
+    android:clickable="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:onClick="CloseKeyboard">
+
+    <Button
+        android:id="@+id/Kaydet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Kaydet"
+        app:layout_constraintStart_toEndOf="@+id/Kapat"
+        app:layout_constraintTop_toBottomOf="@+id/Oncelik" />
+
+    <Button
+        android:id="@+id/Kapat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Kapat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Oncelik" />
+
+    <Spinner
+        android:id="@+id/Oncelik"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/Saat"
+        app:layout_constraintStart_toStartOf="@+id/Saat"
+        app:layout_constraintTop_toBottomOf="@+id/Saat" />
+
+    <TextView
+        android:id="@+id/Tarih"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="Hatırlatma Tarihi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Saat"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:hint="Hatırlatma Saati"
+        app:layout_constraintEnd_toEndOf="@+id/Tarih"
+        app:layout_constraintStart_toStartOf="@+id/Tarih"
+        app:layout_constraintTop_toBottomOf="@+id/Tarih" />
+
+</android.support.constraint.ConstraintLayout>
